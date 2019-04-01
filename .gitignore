@@ -2,7 +2,7 @@
 .bit
 .env
 
-files
+data
 node_modules
 
 .yarn-integrity
