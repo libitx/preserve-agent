@@ -19,10 +19,10 @@ fb.config.cache.connect()
 fb.config.cache.hgetallAsync = promisify(fb.config.cache.client.hgetall).bind(fb.config.cache.client)
 
 // Create assets directory at startup
-const assetsDir = path.join(__dirname, 'files')
-fs.access(assetsDir, fs.constants.F_OK | fs.constants.W_OK, err => {
+const dataDir = path.join(__dirname, (process.env.DATA_DIR || 'data'))
+fs.access(dataDir, fs.constants.F_OK | fs.constants.W_OK, err => {
   if (err) {
-    fs.mkdir(assetsDir, err => {
+    fs.mkdir(dataDir, err => {
       if (err) throw new Error('Failed to create assets directory');
       console.log('Assets directory created')
     })
@@ -39,14 +39,16 @@ const agent     = new fb.Agent({
   }
 })
 
-app.context.assetsDir = assetsDir;
+app.context.dataDir = dataDir;
 app.context.agent = agent;
+
+const port = process.env.PORT || 3000;
 
 app
   .use(logger())
   .use(dnsMiddleware)
   .use(routerMiddleware)
   .use(fileMiddleware)
-  .listen(3000, _ => {
-    console.log('𝑓𝐁 site server listening on port 3000')
+  .listen(port, _ => {
+    console.log(`Preserve Agent listening on port ${ port }`)
   })
