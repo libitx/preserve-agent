@@ -6,6 +6,10 @@
   "repository": "https://github.com/libitx/preserve-agent",
   "author": "libitx",
   "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon index.js",
+    "deploy": "shipit production deploy"
+  },
   "dependencies": {
     "@functional-bitcoin/agent": "^0.0.1-beta.17",
     "axios": "^0.18.0",
