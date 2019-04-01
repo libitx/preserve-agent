@@ -1,0 +1,16 @@
+{
+  "name": "preserve-agent",
+  "version": "0.0.1",
+  "description": "Koa.js webserver for rendering asstes on the Bitcoin blockchain as websites.",
+  "main": "index.js",
+  "repository": "https://github.com/libitx/preserve-agent",
+  "author": "libitx",
+  "license": "MIT",
+  "dependencies": {
+    "@functional-bitcoin/agent": "^0.0.1-beta.17",
+    "axios": "^0.18.0",
+    "bsv": "^0.26.4",
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.0"
+  }
+}

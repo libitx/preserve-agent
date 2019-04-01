@@ -1,0 +1,10 @@
+.DS_Store
+.bit
+.env
+
+files
+node_modules
+
+.yarn-integrity
+yarn-debug.log*
+yarn-error.log*
