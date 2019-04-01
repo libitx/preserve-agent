@@ -12,5 +12,12 @@
     "bsv": "^0.26.4",
     "koa": "^2.7.0",
     "koa-logger": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "shipit-cli": "^4.2.0",
+    "shipit-deploy": "^4.1.4",
+    "shipit-shared": "^4.4.2",
+    "shipit-yarn": "^0.2.0"
   }
 }

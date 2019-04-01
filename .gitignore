@@ -8,3 +8,7 @@ node_modules
 .yarn-integrity
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore deployment files
+ecosystem.config.js
+shipitfile.js
