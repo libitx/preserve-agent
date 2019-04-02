@@ -15,6 +15,7 @@
     "axios": "^0.18.0",
     "bsv": "^0.26.4",
     "koa": "^2.7.0",
+    "koa-conditional-get": "^2.0.0",
     "koa-logger": "^3.2.0"
   },
   "devDependencies": {

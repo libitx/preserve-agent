@@ -3,6 +3,7 @@ const fs            = require('fs')
 const path          = require('path')
 const Koa           = require('koa')
 const logger        = require('koa-logger')
+const conditional   = require('koa-conditional-get')
 const fb            = require('@functional-bitcoin/agent')
 const redisCache    = require('@functional-bitcoin/agent/lib/cache/redis')
 
@@ -46,6 +47,7 @@ const port = process.env.PORT || 3000;
 
 app
   .use(logger())
+  .use(conditional())
   .use(dnsMiddleware)
   .use(routerMiddleware)
   .use(fileMiddleware)
