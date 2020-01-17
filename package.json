@@ -11,7 +11,7 @@
     "deploy": "shipit production deploy"
   },
   "dependencies": {
-    "@functional-bitcoin/agent": "^0.0.1-beta.17",
+    "@functional-bitcoin/agent": "^0.0.1-beta.20",
     "axios": "^0.18.0",
     "bsv": "^0.26.4",
     "koa": "^2.7.0",

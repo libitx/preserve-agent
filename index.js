@@ -13,7 +13,7 @@ const routerMiddleware  = require('./lib/router-middleware')
 const fileMiddleware    = require('./lib/file-middleware')
 
 // Configure Functional Bitcoin
-const bitdbKey      = process.env.BITDB_KEY || '14UgWjqscycW3Hz3XDEzpAdf4nYRogBANL';
+const bitdbKey = process.env.BITDB_KEY || '14UgWjqscycW3Hz3XDEzpAdf4nYRogBANL';
 fb.config.adapter.key = bitdbKey;
 fb.config.cache = redisCache;
 fb.config.cache.connect()
