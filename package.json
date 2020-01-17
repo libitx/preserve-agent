@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@functional-bitcoin/agent": "^0.0.1-beta.20",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "bsv": "^0.26.4",
     "koa": "^2.7.0",
     "koa-conditional-get": "^2.0.0",
